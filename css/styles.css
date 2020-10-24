@@ -1,0 +1,464 @@
+body {
+	background: linear-gradient(to bottom left, #F4750C 5%, #D81B5C 39%, #A82F63 66%, #78157E 91%);
+	color: rgb(20,20,20);
+	font-family: 'Poppins', sans-serif;
+	background-repeat: no-repeat;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.box {
+	width: 90%;
+}
+
+header {
+	--text: #F4F4F4;
+	--text-inverse: #FCB040;
+	--background: rgba(70,70,70,0.1);
+	--background-inverse: rgba(70,70,70,0.8);
+	
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	background: var(--background);
+	color: var(--text);
+	padding: 20px 0;
+	margin-bottom: 30px;
+}
+
+#hd #navList {
+	list-style-type: none;
+}
+
+#hd a {
+	float: left;
+	padding: 10px;
+	color: var(--text);
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: 500;
+	width: 23%;
+	text-align: center;
+}
+
+#hd a:hover, #hd a:active, #hd a:focus{
+	color: var(--text-inverse);
+	cursor: pointer;
+}
+
+#banner {
+	height: 500px;
+	padding: 8% 0;
+}
+
+#banner h1 {
+	vertical-align: middle;
+	display: inline-block;
+	padding-top: 16%;
+	font-size: 50px;
+	color: white;
+}
+
+#mockupImg {
+	width: 50%;
+	float: right;
+}
+
+.sectionTitle {
+	font-size: 32px;
+	font-weight: 500;
+	color: #FCB040;
+	padding-top: 120px;
+}
+
+.sectionDesc {
+	font-size: 18px;
+	color: white;
+	margin: 5px 0;
+}
+
+.servContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+.secStyle {
+	margin-bottom: 70px;
+}
+
+.servBox {
+	padding-top: 40px;
+	height: 200px;
+}
+
+.servBox .faIcons {
+	font-size: 30px;
+}
+
+.servBox p {
+	font-size: 14px;
+	padding: 10px;
+}
+
+#contactForm {
+	margin: 0 auto;
+	padding: 10px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.formLabel {
+	font-size: 17px;
+	display: inline-block;
+	margin: 10px 0;
+	width: 100px;
+	text-align: right !important;
+}
+
+.formInput {
+	border: 0;
+	background: transparent;
+	border-bottom: 2px solid #FCB040;
+	margin: 0 50px 0 5px;
+	width: 300px;
+}
+
+#choose option {
+	font-family: 'Poppins', sans-serif;
+	background: transparent;
+}
+
+#choose option:first-child{
+	display: none;
+}
+
+.formInput:hover,.formInput:focus{
+	outline: none;
+}
+
+.formArea {
+	border: 0;
+	background: transparent;
+	border-bottom: 2px solid #FCB040;
+	margin: 0 50px 0 5px;
+	width: 300px;
+}
+
+.formButton {
+	font-family: 'Poppins', sans-serif;
+	font-size: 17px;
+	background-color: transparent;
+	border: 2px solid #FCB040;
+	color: #FCB040;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 250px;
+	height: 40px;
+}
+
+.formButton:hover {
+	font-family: 'Poppins', sans-serif;
+	font-size: 17px;
+	background-color: #FCB040;
+	border: 2px solid transparent;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 250px;
+	height: 40px;
+}
+
+footer, footer a {
+	margin: 80px 0 40px 0;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+}
+
+footer a:hover {
+	color: #FCB040;
+}
+
+.nav-scrolled {
+	--text: #000;
+	--background: #F4F4F4;
+	
+	box-shadow: 0 3px 20px rgba(0,0,0, 0.2);
+}
+
+.activeItem {
+	color: #FCB040 !important;
+	text-decoration: underline !important;
+}
+
+
+
+
+
+
+/* ========== MOBILE DESIGN ========== */
+
+@media (max-width: 600px) {
+h3 { font-size: 0.7em;}
+p { font-size: 0.7em;}
+
+#hd {
+	width: 100%;
+	height: 70px;
+	overflow: auto;
+	background-color: rgba(70,70,70,0.1);
+	padding-top: 13px;
+	margin-bottom: 15px;
+}
+
+#hd a {
+	float: left;
+	padding: 0.7em;
+	color: white;
+	text-decoration: none;
+	font-size: 0.8em;
+	font-weight: 500;
+	width: 20%;
+	text-align: center;
+}
+
+#banner {
+	height: 200px;
+}
+
+#banner h1 {
+	vertical-align: middle;
+	display: inline-block;
+	padding-top: 15%;
+	font-size: 16px;
+	color: white;
+}
+
+#mockupImg {
+	width: 45%;
+	float: right;
+}
+
+.sectionTitle {
+	font-size: 15px;
+}
+
+.sectionDesc {
+	font-size: 12px;
+}
+
+.servBox .faIcons {
+	font-size: 25px;
+}
+
+.servBox h3 {
+	font-size: 12px;
+}
+
+.servBox p {
+	font-size: 11px;
+	padding: 10px;
+}
+
+
+#contactForm {
+	margin: 0 auto;
+	padding: 10px;
+	font-family: 'Poppins', sans-serif;
+	display: block;
+}
+
+.formLabel {
+	font-size: 13px;
+	display: block;
+	margin: 10px 0;
+	width: 100px;
+	text-align: right !important;
+}
+
+.formInput {
+	border: 0;
+	background: transparent;
+	border-bottom: 2px solid #FCB040;
+	margin: 0 50px 0 5px;
+	width: 300px;
+}
+
+#choose option {
+	font-family: 'Poppins', sans-serif;
+	background: transparent;
+}
+
+#choose option:first-child{
+	display: none;
+}
+
+.formInput:hover,.formInput:focus{
+	outline: none;
+}
+
+.formArea {
+	border: 0;
+	background: transparent;
+	border-bottom: 2px solid #FCB040;
+	margin: 0 50px 0 5px;
+	width: 300px;
+}
+
+.formButton {
+	font-family: 'Poppins', sans-serif;
+	font-size: 13px;
+	background-color: transparent;
+	border: 2px solid #FCB040;
+	color: #FCB040;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 200px;
+	height: 30px;
+}
+
+.formButton:hover {
+	font-family: 'Poppins', sans-serif;
+	font-size: 13px;
+	background-color: #FCB040;
+	border: 2px solid transparent;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 200px;
+	height: 30px;
+}
+
+footer, footer a {
+	margin: 20px 0;
+	text-align: center;
+	font-size: 12px;
+	color: white;
+}
+
+footer a:hover {
+	color: #FCB040;
+}
+
+}
+
+
+/* ========== SMALL MOBILE DESIGN ========== */
+
+@media (max-width: 320px) {
+#hd {
+	width: 100%;
+	height: 40px;
+	overflow: auto;
+	background-color: rgba(70,70,70,0.1);
+	padding-top: 13px;
+	margin-bottom: 15px;
+}
+
+#hd a {
+	float: left;
+	padding: 3px;
+	color: white;
+	text-decoration: none;
+	font-size: 0.5em;
+	font-weight: 400;
+	width: 20%;
+	text-align: center;
+}
+
+#banner {
+	height: 200px;
+}
+
+#banner h1 {
+	vertical-align: middle;
+	display: inline-block;
+	padding-top: 15%;
+	font-size: 12px;
+	font-weight: 400px;
+	color: white;
+}
+
+#mockupImg {
+	width: 40%;
+}
+
+.sectionTitle {
+	font-size: 11px;
+}
+
+.sectionDesc {
+	font-size: 10px;
+}
+
+.servBox .faIcons {
+	font-size: 30px;
+}
+
+.servBox h3 {
+	font-size: 12px;
+}
+
+.servBox p {
+	font-size: 11px;
+	padding: 10px;
+}
+
+}
+
+
+
+
+
+
+/* ========== TABLET DESIGN ========== */
+
+@media (min-width: 600px) and (max-width:1480px) {
+#hd {
+	width: 100%;
+	height: 70px;
+	overflow: auto;
+	background-color: rgba(70,70,70,0.1);
+	padding-top: 20px;
+	margin-bottom: 30px;
+}
+
+#hd a {
+	float: left;
+	padding: 5px;
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: 500;
+	width: 23%;
+	text-align: center;
+}
+
+#banner {
+	height: 400px;
+}
+
+#banner h1 {
+	vertical-align: middle;
+	display: inline-block;
+	padding-top: 13%;
+	font-size: 22px;
+	color: white;
+}
+
+#mockupImg {
+	width: 50%;
+	float: right;
+}
+
+
+	
+}

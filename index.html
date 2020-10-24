@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+	<title>Landing Page</title>
+	<link rel="stylesheet" href="css/styles.css"/>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+
+<body>
+	<header>
+		<nav id="hd">
+			<ul id="navList">
+				<li class="navItem"><a href="#services">Services</a></li>
+				<li class="navItem"><a href="#about">About</a></li>
+				<li class="navItem"><a href="#why">Why Us</a></li>
+				<li class="navItem"><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>  <!--End of [hd] box-->
+	</header>
+	
+	
+	<div class="container">	
+		<div class="box" id="banner">
+			<h1>Specialized in Web Design</h1>
+			<img src="images/mockup.png" alt="Mockup of iPhone" id="mockupImg">
+		</div>
+		
+		<div class="box">
+			<section id="secOne" class="secStyle">
+				<a id="services" class="sectionTitle">Services</a>
+				<p class="sectionDesc">We offer a lot of things, here is our best</p>
+				<div class="servContainer">
+					<div class="servBox">
+						<i class="faIcons fa fa-trophy"></i>
+						<h3>User Interface Design</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+					<div class="servBox">
+						<i class="faIcons fa fa-flask"></i>
+						<h3>User Experience Design</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+					<div class="servBox">
+						<i class="faIcons fa fa-rocket"></i>
+						<h3>System Analysis</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+				</div>
+			</section>
+		</div> <!-- End of Box -->
+		
+		
+		<div class="box">
+			<section id="secTwo" class="secStyle">
+				<a id="about" class="sectionTitle">About Us</a>
+				<p class="sectionDesc">Our history, mission, vision and much more</p>
+				<h3>History</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+				when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<h3>Mission</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+				when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<h3>Vision</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+				when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+				when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			</section>
+		</div> <!-- End of Box -->
+		
+		<div class="box">
+			<section id="secThree" class="secStyle">
+				<a id="why" class="sectionTitle">Why Us</a>
+				<p class="sectionDesc">Many companies offer what we have, but here's why we are the best fit</p>
+				<div class="servContainer">
+					<div class="servBox">
+						<i class="faIcons fa fa-clock"></i>
+						<h3>Fast Delivery</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+					<div class="servBox">
+						<i class="faIcons fa fa-ticket-alt"></i>
+						<h3>24/7 Customer Support</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+					<div class="servBox">
+						<i class="faIcons fa fa-gem"></i>
+						<h3>High Quality Designs</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+				</div>
+				<div class="servContainer">
+					<div class="servBox">
+						<i class="faIcons fa fa-money-bill-alt"></i>
+						<h3>Competitive Prices</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+					<div class="servBox">
+						<i class="faIcons fa fa-pen"></i>
+						<h3>Responsive Designs</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+					<div class="servBox">
+						<i class="faIcons fa fa-language"></i>
+						<h3>Bilingual - Arabic and English</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+				</div>
+			</section>
+		</div> <!-- End of Box -->
+		
+		<div class="box">
+			<section id="secFour" class="secStyle">
+				<a id="contact" class="sectionTitle">Contact Us</a>
+				<p class="sectionDesc">Did we get your attention? Contact us for futher information</p>
+				<div class="servContainer">
+					<form id="contactForm" action="#">
+						<label class="formLabel" for="name">Name:</label>
+						<input class="formInput" type="text" id="name" name="name"><br>
+						<label class="formLabel" for="email">Email:</label>
+						<input class="formInput" type="text" id="email" name="email"><br>
+						<label class="formLabel" for="choose">Reason:</label>
+						<select class="formInput" name="choose" id="choose">
+							<option></option>
+							<option value="subscriptions">Subscriptions</option>
+							<option value="suggestions">Suggestions</option>
+							<option value="queries">Queries</option>
+							<option value="complaints">Complaints</option>
+						</select><br>
+						<label class="formLabel" for="subject">Subject:</label>
+						<input class="formInput" type="text" id="subject" name="subject"><br>
+						<label class="formLabel" for="message">Message:</label>
+						<textarea class="formArea" id="message" name="message"></textarea>
+						<br>
+						<br>
+						<input class="formButton" type="submit" value="Submit">
+					</form> 
+				</div>
+			</section>
+		</div> <!-- End of Box -->
+		
+		
+	</div> <!--End of Container-->
+		
+
+
+
+
+<footer>
+	<address id="footerAddress">
+			Designed by Rafah<br>
+			Visit her portfolio at <a href="http://byrafah.com/">www.byrafah.com</a><br>
+	</address>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+
+
+
+</html>
