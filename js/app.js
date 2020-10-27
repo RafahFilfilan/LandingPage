@@ -29,7 +29,7 @@ function buildMenu (liElements) {
 function theySeeMeScrolling(id){
 	const theyLovin = document.getElementById(id);
 	console.log(theyLovin);
-	theyLovin.scrollIntoView();
+	theyLovin.scrollIntoView({behavior: "smooth"});
 }
 
 
@@ -74,18 +74,21 @@ onscroll = function (){
 	});
 };
 
+// Remove active class from the navbar [<ul> <li> <a>]
 const removeAllActiveClassesFromLinks = function (){
 	document.querySelectorAll('nav ul li a').forEach((el) => {
 		el.classList.remove("activeItem");
 	});
 };
 
+// Remove active class from the section title [<section> <a>]
 const removeAllActiveClassesFromTitles = function (){
 	document.querySelectorAll('section a').forEach((sec) => {
 		sec.classList.remove("activeItem");
 	});
 };
 
+// Add active class to navbar [<ul> <li> <a>]
 const addActiveClassToLink = function(id){
 	let selectLink;
 	switch (id) {
@@ -105,6 +108,7 @@ const addActiveClassToLink = function(id){
 	document.querySelector(selectLink).classList.add("activeItem");
 };
 
+// Add active class to section title [<section> <a>]
 const addActiveClassToTitle = function(id){
 	const selectTitle = document.getElementById(id);
 	selectTitle.classList.add("activeItem");
