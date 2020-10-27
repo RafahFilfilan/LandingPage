@@ -9,7 +9,7 @@ It contains four sections:
 4. Contact Us
 
 
-This project can be a template for small startup companyies whom looking for a simple website.
+This project can be a template for small startup companies whom looking for a simple website.
 
 All icons are from Font Awesome so make sure you link it to the project.
 
